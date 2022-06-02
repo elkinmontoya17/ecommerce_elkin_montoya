@@ -1,5 +1,6 @@
 import React from 'react'
 import imagenlogo from  '../images/logo.png'
+import CarWidget from './CarWidget'
 
 function NavBar() {
   return (
@@ -22,8 +23,8 @@ function NavBar() {
         <li className="nav-item">
           <a className="nav-link" href="#">Catalogo</a>
         </li>
-
       </ul>
+      <CarWidget items={4} />
     </div>
   </div>
 </nav>
