@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import imagenlogo from  '../images/logo.png'
 import CarWidget from './CarWidget'
 
@@ -6,22 +7,19 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">
-    <img src={imagenlogo} alt="" width="45" height="30"Y/>
-    </a>
+    <Link to="/" className="navbar-brand"><img src={imagenlogo} alt="" width="45" height="30"Y/></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Nuestra Tienda</a>
+          <Link to="/" className="nav-link active" aria-current="page">Todos los Productos</Link>                 </li>
+        <li className="nav-item">
+          <Link to="/categoria/:id" className="nav-link" href="#">Frutas</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Promociones</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Catalogo</a>
+          <Link to="/categoria/:id" className="nav-link" href="#">Nueces</Link>
         </li>
       </ul>
       <CarWidget items={4} />
