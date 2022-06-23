@@ -16,10 +16,10 @@ function NavBar() {
         <li className="nav-item">
           <Link to="/" className="nav-link active" aria-current="page">Todos los Productos</Link>                 </li>
         <li className="nav-item">
-          <Link to="/categoria/:id" className="nav-link" href="#">Frutas</Link>
+          <Link to="/categoria/frutas" className="nav-link" href="#">Frutas</Link>
         </li>
         <li className="nav-item">
-          <Link to="/categoria/:id" className="nav-link" href="#">Nueces</Link>
+          <Link to="/categoria/nueces" className="nav-link" href="#">Nueces</Link>
         </li>
       </ul>
       <CarWidget items={4} />
