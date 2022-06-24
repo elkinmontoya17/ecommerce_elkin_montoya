@@ -43,7 +43,7 @@ function ItemDetailContainer() {
 
   return (
     <>
-        {/* <ItemDetail articulo={articulo}/> */}
+         <ItemDetail articulo={articulo}/> 
     </>
   )
 }

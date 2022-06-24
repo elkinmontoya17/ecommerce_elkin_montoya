@@ -1,7 +1,18 @@
 import React from 'react'
+import useState from "react"
+import { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 
 function ItemDetail({articulo}) {
+  const [cant, setCant] = useState(1)
+  const {id} = useParams();
+  
+  useEffect(() => {
+    
 
+
+  }, [id])
+  
 
   return (
     <div className="card" style={{width: "18rem"}}>

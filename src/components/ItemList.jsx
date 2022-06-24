@@ -7,7 +7,7 @@ function ItemList({items}) {
   
 
   return (
-    <div>
+    <div className="d-flex justify-content-sm-around">
         {items.map(producto => <Item key={producto.id} producto={producto}/>)}
     </div>
   )
